@@ -1,13 +1,17 @@
 class StoreAdminController < ApplicationController
        
-        :layout => "admin"
+        layout "admin"
    
-    def index
+    def home
+      #  render :layout => "admin"
     end
    
-    def new
+    def orders
+        render :layout => "order_administration"
+        # byebug
     end
 
     def invoice
+        render :layout => false
     end
 end
